@@ -62,7 +62,7 @@ namespace RettieAddIn.Helper
 
         private RettieContact FindContact(String email)
         {
-            RettieContact contact = ContactsHelper.GetListOfContactsAsync().Result.Find(r => r.Email == email);
+            RettieContact contact = ContactsHelper.GetListOfContactsAsync().Result.Find(r => r.Email.ToLower() == email.ToLower());
             return contact;
         }
 
