@@ -70,7 +70,7 @@ namespace RettieAddIn.Model
                 {
                     _LastCheckedDate = value;
                     NotifyPropertyChanged("LastCheckedDate");
-                    //OnDirtyFlagChanged(new EventArgs());
+                    OnDirtyFlagChanged(new EventArgs());
                 }
             }
         }
